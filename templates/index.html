@@ -1,0 +1,271 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+<!-- Google Tag Manager -->
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZZS3GV');</script> -->
+<!-- End Google Tag Manager -->
+<title>RateAnyWhere</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="google-site-verification" content="JhFM6nHvDS33pmsms7fPHuSWj7Vc4kyqQJZDGdfK78w" />
+<!-- CSS reset -->
+<link rel="stylesheet" href="{% static 'css/reset.css' %}">
+<!-- Resource style -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!-- Page main style -->
+<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+
+<!-- Bootstrap -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->
+<!-- 警告：Respond.js 無法在 file:// 協定下運作 -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- Modernizr -->
+<script src="{% static 'js/modernizr.js' %}"></script> 
+<!-- D3js -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+    <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZZS3GV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZZS3GV');</script>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Pagination -->
+<nav id="cd-vertical-nav" >
+  <ul class="slider">
+    <li>
+      <a href="#banner" data-number="1">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Rate Anywhere</span>
+      </a>
+    </li>
+    <li>
+      <a href="#one" data-number="2">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Check The Rate</span>
+      </a>
+    </li>
+    <li>
+      <a href="#two" data-number="3">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Bank Rate: Where to get them</span>
+      </a>
+    </li>
+    <li>
+      <a href="#three" data-number="4">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Multiple Currency Exchange</span>
+      </a>
+    </li>
+    <li>
+      <a href="#four" data-number="5">
+        <span class="cd-dot"></span>
+        <span class="cd-label">History</span>
+      </a>
+    </li>
+    <!-- other navigation items here-->
+    <li>
+      <a href="#contact" data-number="9999">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Contact Us</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+<div class="vslide-bg"></div>
+
+<!-- Header -->
+<header id="header">
+  <div class="inner">  
+    <a href="/" class="logo">RateAnyWhere</a>
+    <nav id="nav"> {% if request.user.is_authenticated %}
+      <p><img class="user-photo img-responsive" src="{% static 'images/user_photo_default.jpg' %}"/>{{request.user}} Login already, <a href="/accounts/logout/">Logout</a>?</p>
+      {% else %}
+      <p>More features ?<a href="/accounts/login/">Login</a> or <a href="/accounts/register/">Join us</a> first.</p>
+      {% endif %} </nav>
+  </div>
+</header>
+<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> 
+
+<!-- Banner -->
+<section id="banner">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="content">
+        <h1 class="title">RateAnyWhere: <span>Quick to find the rate exchange difference you want to know anywhere</span></h1>
+        <div class="caption">Use this tools below to help your figure the rate of currency out!</div>
+        </div>
+      </div>
+    </div>
+    <ul class="actions">
+      <li><a href="#" class="button alt">Get Started</a></li>
+    </ul>
+    <h7 class="disclaimer">*Disclaimer: This site only provides exchange rate information, does not give any transaction; if any improper use, has nothing to do with the site.</h7>
+  </div>
+</section>
+
+<!-- One -->
+<section id="one">
+  <div class="inner">
+    <header>
+      <h2>Check The Rate</h2>
+    </header>
+    <p></p>
+    <ul class="actions">
+      <li><a href="#" class="button alt">Get More</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Two -->
+<section id="two">
+  <div class="inner">
+    <article>
+      <div class="content">
+        <header>
+          <h3>Bank Rate<span></span></h3>
+        </header>
+        <div class="image fit"> 
+        </div>
+        <p></p>
+      </div>
+    </article>
+    <article class="alt">
+      <div class="content">
+        <header>
+          <h3>Where to get them</h3>
+        </header>
+        <div class="image fit"> 
+        <p></p>
+      </div>
+    </div>
+    </article>
+  </div>
+</section>
+
+<!-- Three -->
+<section id="three">
+  <div class="inner">
+    <article>
+      <div class="content"> <span class="icon fa-laptop"></span>
+        <header>
+          <h3>Multiple Currency Exchange</h3>
+        </header>
+        <p></p>
+        <ul class="actions">
+          <li><a href="#" class="button alt">Learn More</a></li>
+        </ul>
+      </div>
+    </article>
+    <article>
+      <div class="content"> <span class="icon fa-diamond"></span>
+        <header>
+          <h3>Currency A</h3>
+        </header>
+        <p></p>
+        <ul class="actions">
+          <li><a href="#" class="button alt">Learn More</a></li>
+        </ul>
+      </div>
+    </article>
+    <article>
+      <div class="content"> <span class="icon fa-laptop"></span>
+        <header>
+          <h3>Currency B</h3>
+        </header>
+        <p>vehicula.</p>
+        <ul class="actions">
+          <li><a href="#" class="button alt">Learn More</a></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Four -->
+<section id="one">
+  <div class="inner">
+    <header>
+      <h2>History</h2>
+    </header>
+    <p></p>
+    <ul class="actions">
+      <li><a href="#" class="button alt">Get More</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="inner">
+    <header>
+      <h2>Get in Touch</h2>
+    </header>
+    <form method="post" action="#">
+      {% csrf_token %}
+      <div class="field half first">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="field half">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" />
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="6"></textarea>
+      </div>
+      <ul class="actions">
+        <li>
+          <input type="submit" value="Send Message" class="alt" />
+        </li>
+      </ul>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<section id="footer">
+  <div class="inner">
+    <header>
+      <h2></h2>
+    </header>
+    <div class="copyright"> &copy; Copyright: <a href="http://ideaanywhere.slack.com" target="_blank">iDeaAnyWhere</a>. Design by <a href="mailto:walkuper@gmail.com">Walkup</a> & <a href="mailto:tiomor4n@gmail.com">Simon</a> </div>
+  </div>
+</section>
+
+<!-- Scripts --> 
+<script src="{% static 'js/jquery.min.js' %}"></script> 
+<script src="{% static 'js/skel.min.js' %}"></script> 
+<script src="{% static 'js/util.js' %}"></script> 
+<script src="{% static 'js/main.js' %}"></script> 
+<!-- jQuery (Bootstrap 所有外掛均需要使用) --> 
+<script src="{% static 'js/jquery.min.js' %}"></script> 
+<!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 --> 
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
