@@ -1,4 +1,4 @@
-def DataPipe(request):
+def DataPipe():
 	from bs4 import BeautifulSoup as bs
 	import requests
 	import sys
