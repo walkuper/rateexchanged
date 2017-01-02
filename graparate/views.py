@@ -9,6 +9,8 @@ from bs4 import BeautifulSoup as bs
 import requests
 import sys
 import json
+from urllib.request import urlopen
+from graparate.crawer import DataPipe
 
 
 def login(request):
@@ -41,6 +43,19 @@ def register(request):
 def index(request):
     return render_to_response('index.html',locals())
 
+def grsp(request):
+    txt = DataPipe()
+    return HttpResponse(txt)
+
+def bankpack(request):
+    jsonparser = urlopen('https://test-pro-tiomor4n.c9.io/grsp/')
+    getdata = jsonparser.read()
+    pos_start = getdata.find('[')
+    pos_end = getdata.find(']')
+    usedata = getdata[(pos_start):pos_end]
+    getjson = json.loads(usedata)
+    for i in range(len(getjson)):
+        print (getjson[i]['銀行名稱'])
 
 
 base_dir = settings.BASEDIR()
