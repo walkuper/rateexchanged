@@ -14,7 +14,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from graparate.views import index, login, logout,register
+from graparate.views import index, login, logout,register, grsp, bankpack
 from graparate.crawer import DataPipe
 
 urlpatterns = [
@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^accounts/register/$',register),
     url(r'^index/$', index),
     url(r'^$',index),
-    url(r'^grap/$', DataPipe),
+    url(r'^grap/$', grsp),
+    url(r'^bank/$', bankpack),
 ]
