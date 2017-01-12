@@ -1,0 +1,335 @@
+[
+  {
+    "spotsell": "32.292",
+    "bankname": "星展銀行\n",
+    "refreshtime": "22:28",
+    "spotbuy": "32.19",
+    "charge": " 台幣總額之1% ",
+    "billbuy": "31.99",
+    "billsell": "32.492"
+  },
+  {
+    "spotsell": "32.28",
+    "bankname": "瑞興銀行\n",
+    "refreshtime": "22:30",
+    "spotbuy": "32.18",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "31.98",
+    "billsell": "32.48"
+  },
+  {
+    "spotsell": "32.29",
+    "bankname": "聯邦銀行\n",
+    "refreshtime": "22:30",
+    "spotbuy": "32.19",
+    "charge": " 台幣總額0.7%  ",
+    "billbuy": "32.04",
+    "billsell": "32.44"
+  },
+  {
+    "spotsell": "32.303",
+    "bankname": "元大銀行\n",
+    "refreshtime": "22:30",
+    "spotbuy": "32.167",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "31.967",
+    "billsell": "32.453"
+  },
+  {
+    "spotsell": "32.282",
+    "bankname": "彰化銀行\n",
+    "refreshtime": "22:30",
+    "spotbuy": "32.182",
+    "charge": " 台幣總額之1% ",
+    "billbuy": "32.032",
+    "billsell": "32.432"
+  },
+  {
+    "spotsell": "32.25",
+    "bankname": "華泰銀行\n",
+    "refreshtime": "22:30",
+    "spotbuy": "32.15",
+    "charge": " 免手續費 ",
+    "billbuy": "31.85",
+    "billsell": "32.395"
+  },
+  {
+    "spotsell": "32.425",
+    "bankname": "大眾銀行\n",
+    "refreshtime": "22:30",
+    "spotbuy": "32.136",
+    "charge": " 免手續費 ",
+    "billbuy": "32.006",
+    "billsell": "32.555"
+  },
+  {
+    "spotsell": "32.29",
+    "bankname": "國泰世華\n",
+    "refreshtime": "22:30",
+    "spotbuy": "32.19",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "31.99",
+    "billsell": "32.47"
+  },
+  {
+    "spotsell": "32.283",
+    "bankname": "台中銀行\n",
+    "refreshtime": "22:30",
+    "spotbuy": "32.183",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "31.983",
+    "billsell": "32.433"
+  },
+  {
+    "spotsell": "32.295",
+    "bankname": "凱基銀行\n",
+    "refreshtime": "22:30",
+    "spotbuy": "32.195",
+    "charge": " 台幣總額之1% ",
+    "billbuy": "32.02",
+    "billsell": "32.47"
+  },
+  {
+    "spotsell": "32.28",
+    "bankname": "合作金庫\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.18",
+    "charge": " 免手續費 ",
+    "billbuy": "31.965",
+    "billsell": "32.425"
+  },
+  {
+    "spotsell": "32.284",
+    "bankname": "土地銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.184",
+    "charge": " 免手續費 ",
+    "billbuy": "31.884",
+    "billsell": "32.434"
+  },
+  {
+    "spotsell": "32.297",
+    "bankname": "日盛銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.197",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "31.997",
+    "billsell": "32.497"
+  },
+  {
+    "spotsell": "32.282",
+    "bankname": "遠東商銀\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.182",
+    "charge": " 總額1%,最低100 ",
+    "billbuy": "31.932",
+    "billsell": "32.432"
+  },
+  {
+    "spotsell": "32.27",
+    "bankname": "郵局\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.17",
+    "charge": " 免手續費 ",
+    "billbuy": "31.82",
+    "billsell": "32.425"
+  },
+  {
+    "spotsell": "32.305",
+    "bankname": "花旗銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.205",
+    "charge": " 總額0.35%,最低NT$100 ",
+    "billbuy": "31.9525",
+    "billsell": "32.558"
+  },
+  {
+    "spotsell": "32.26",
+    "bankname": "高雄銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.16",
+    "charge": " 台幣總額之0.5% ",
+    "billbuy": "32.01",
+    "billsell": "32.41"
+  },
+  {
+    "spotsell": "32.29",
+    "bankname": "安泰銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.19",
+    "charge": " 免手續費 ",
+    "billbuy": "31.99",
+    "billsell": "32.49"
+  },
+  {
+    "spotsell": "32.295",
+    "bankname": "臺灣企銀\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.195",
+    "charge": " 總額0.7%,最低NT$100 ",
+    "billbuy": "32.045",
+    "billsell": "32.445"
+  },
+  {
+    "spotsell": "32.292",
+    "bankname": "永豐銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.172",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "32.022",
+    "billsell": "32.442"
+  },
+  {
+    "spotsell": "32.291",
+    "bankname": "台新銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.191",
+    "charge": " 有賬戶免手續費 ",
+    "billbuy": "32.041",
+    "billsell": "32.441"
+  },
+  {
+    "spotsell": "32.295",
+    "bankname": "渣打銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.175",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "31.985",
+    "billsell": "32.485"
+  },
+  {
+    "spotsell": "32.3",
+    "bankname": "上海商銀\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.17",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "31.98",
+    "billsell": "32.48"
+  },
+  {
+    "spotsell": "32.282",
+    "bankname": "陽信銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.182",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "31.982",
+    "billsell": "32.482"
+  },
+  {
+    "spotsell": "32.2905",
+    "bankname": "富邦銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.1905",
+    "charge": " 非本行每筆NT$100 ",
+    "billbuy": "32.0355",
+    "billsell": "32.4455"
+  },
+  {
+    "spotsell": "32.265",
+    "bankname": "中國信託\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.225",
+    "charge": " 非本行每筆NT$300 ",
+    "billbuy": "32.045",
+    "billsell": "32.445"
+  },
+  {
+    "spotsell": "32.27",
+    "bankname": "兆豐銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.17",
+    "charge": " 免手續費 ",
+    "billbuy": "31.9",
+    "billsell": "32.42"
+  },
+  {
+    "spotsell": "32.28",
+    "bankname": "泰國盤谷銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.16",
+    "charge": " 免手續費  ",
+    "billbuy": "31.77",
+    "billsell": "32.47"
+  },
+  {
+    "spotsell": "32.295",
+    "bankname": "板信銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.195",
+    "charge": " 台幣總額0.5%,最低NT$100 ",
+    "billbuy": "31.995",
+    "billsell": "32.495"
+  },
+  {
+    "spotsell": "32.29",
+    "bankname": "玉山銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.19",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "31.99",
+    "billsell": "32.44"
+  },
+  {
+    "spotsell": "32.29",
+    "bankname": "華南銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.19",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "32.04",
+    "billsell": "32.44"
+  },
+  {
+    "spotsell": "32.27",
+    "bankname": "匯豐銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.17",
+    "charge": " 台幣總額之0.5%  ",
+    "billbuy": "31.92",
+    "billsell": "32.52"
+  },
+  {
+    "spotsell": "32.28",
+    "bankname": "臺灣銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.18",
+    "charge": " 免手續費 ",
+    "billbuy": "31.88",
+    "billsell": "32.422"
+  },
+  {
+    "spotsell": "32.325",
+    "bankname": "第一銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.145",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "32.007",
+    "billsell": "32.465"
+  },
+  {
+    "spotsell": "32.437",
+    "bankname": "京城銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "31.977",
+    "charge": " 免手續費 ",
+    "billbuy": "--",
+    "billsell": "--"
+  },
+  {
+    "spotsell": "32.28",
+    "bankname": "澳盛銀行\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.18",
+    "charge": " 總額1% ",
+    "billbuy": "--",
+    "billsell": "--"
+  },
+  {
+    "spotsell": "32.282",
+    "bankname": "三信商銀\n",
+    "refreshtime": "22:32",
+    "spotbuy": "32.182",
+    "charge": " 每筆NT$100 ",
+    "billbuy": "31.982",
+    "billsell": "32.482"
+  }
+]

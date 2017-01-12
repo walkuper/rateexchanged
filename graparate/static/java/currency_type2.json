@@ -1,0 +1,612 @@
+{"root":{
+  "af": {
+    "Nation": "阿富汗",
+    "Language": "尼",
+    "Currency": "AFN"
+  },
+  "sq": {
+    "Nation": "阿爾巴尼亞",
+    "Language": "列克",
+    "Currency": "ALL"
+  },
+  "ar-sa": {
+    "Nation": "沙烏地阿拉伯",
+    "Language": "里亞爾",
+    "Currency": "SAR"
+  },
+  "ar-iq": {
+    "Nation": "伊拉克",
+    "Language": "第納爾",
+    "Currency": "IQD"
+  },
+  "ar-eg": {
+    "Nation": "埃及",
+    "Language": "鎊",
+    "Currency": "EGP"
+  },
+  "ar-ly": {
+    "Nation": "利比亞",
+    "Language": "第納爾",
+    "Currency": "LYD"
+  },
+  "ar-dz": {
+    "Nation": "阿爾及利亞",
+    "Language": "第納爾",
+    "Currency": "DZD"
+  },
+  "ar-ma": {
+    "Nation": "摩洛哥",
+    "Language": "迪拉姆",
+    "Currency": "MAD"
+  },
+  "ar-tn": {
+    "Nation": "突尼西亞",
+    "Language": "第納爾",
+    "Currency": "TND"
+  },
+  "ar-om": {
+    "Nation": "阿曼",
+    "Language": "里亞爾",
+    "Currency": "OMR"
+  },
+  "ar-ye": {
+    "Nation": "葉門",
+    "Language": "里亞爾",
+    "Currency": "YER"
+  },
+  "ar-sy": {
+    "Nation": "敘利亞",
+    "Language": "鎊",
+    "Currency": "SYP"
+  },
+  "ar-jo": {
+    "Nation": "約旦",
+    "Language": "第納爾",
+    "Currency": "JOD"
+  },
+  "ar-lb": {
+    "Nation": "黎巴嫩",
+    "Language": "鎊",
+    "Currency": "LBP"
+  },
+  "ar-kw": {
+    "Nation": "科威特",
+    "Language": "第納爾",
+    "Currency": "KWD"
+  },
+  "ar-ae": {
+    "Nation": "阿拉伯聯合大公國",
+    "Language": "迪拉姆",
+    "Currency": "AED"
+  },
+  "ar-bh": {
+    "Nation": "巴林",
+    "Language": "第納爾",
+    "Currency": "BHD"
+  },
+  "ar-qa": {
+    "Nation": "卡達",
+    "Language": "利爾",
+    "Currency": "QAR"
+  },
+  "eu": {
+    "Nation": "巴斯克",
+    "Language": "巴斯克幣",
+    "Currency": "BSC"
+  },
+  "bg": {
+    "Nation": "保加利亞",
+    "Language": "列弗",
+    "Currency": "BGN"
+  },
+  "be": {
+    "Nation": "白俄羅斯",
+    "Language": "盧布",
+    "Currency": "BYR"
+  },
+  "ca": {
+    "Nation": "加泰羅尼亞",
+    "Language": "歐元(比塞塔)",
+    "Currency": "ESP"
+  },
+  "zh-tw": {
+    "Nation": "台灣",
+    "Language": "元",
+    "Currency": "TWD"
+  },
+  "zh-cn": {
+    "Nation": "中國",
+    "Language": "元",
+    "Currency": "CNY"
+  },
+  "zh-hk": {
+    "Nation": "香港",
+    "Language": "蚊",
+    "Currency": "HKD"
+  },
+  "zh-sg": {
+    "Nation": "新加坡",
+    "Language": "元",
+    "Currency": "SGD"
+  },
+  "hr": {
+    "Nation": "克羅埃西亞",
+    "Language": "庫納",
+    "Currency": "HRK"
+  },
+  "cs": {
+    "Nation": "捷克",
+    "Language": "克朗",
+    "Currency": "CZK"
+  },
+  "da": {
+    "Nation": "丹麥",
+    "Language": "克朗",
+    "Currency": "DKK"
+  },
+  "nl": {
+    "Nation": "荷蘭",
+    "Language": "盾",
+    "Currency": "ANG"
+  },
+  "nl-be": {
+    "Nation": "比利時",
+    "Language": "歐元(法朗)",
+    "Currency": "EUR"
+  },
+  "en-eu": {
+    "Nation": "歐元",
+    "Language": "歐元",
+    "Currency": "EUR"
+  },
+  "en": {
+    "Nation": "美國",
+    "Language": "美金",
+    "Currency": "USD"
+  },
+  "en-us": {
+    "Nation": "美國",
+    "Language": "美金",
+    "Currency": "USD"
+  },
+  "en-au": {
+    "Nation": "澳洲",
+    "Language": "元",
+    "Currency": "AUD"
+  },
+  "en-gb": {
+    "Nation": "英國",
+    "Language": "英鎊",
+    "Currency": "GBP"
+  },
+  "en-ca": {
+    "Nation": "加拿大",
+    "Language": "元",
+    "Currency": "CAD"
+  },
+  "en-nz": {
+    "Nation": "紐西蘭",
+    "Language": "元",
+    "Currency": "NZD"
+  },
+  "en-ie": {
+    "Nation": "愛爾蘭",
+    "Language": "鎊",
+    "Currency": "IEP"
+  },
+  "en-za": {
+    "Nation": "南非",
+    "Language": "蘭特",
+    "Currency": "ZAR"
+  },
+  "en-jm": {
+    "Nation": "牙買加",
+    "Language": "元",
+    "Currency": "JMD"
+  },
+  "en-bz": {
+    "Nation": "貝里斯",
+    "Language": "元",
+    "Currency": "BZD"
+  },
+  "en-tt": {
+    "Nation": "千里達及托巴哥共和國",
+    "Language": "元",
+    "Currency": "TTD"
+  },
+  "et": {
+    "Nation": "愛沙尼亞",
+    "Language": "克朗",
+    "Currency": "EEK"
+  },
+  "fo": {
+    "Nation": "法羅群島",
+    "Language": "克朗",
+    "Currency": "FOK"
+  },
+  "fa": {
+    "Nation": "伊朗",
+    "Language": "里亞爾",
+    "Currency": "IRR"
+  },
+  "fi": {
+    "Nation": "芬蘭",
+    "Language": "馬克",
+    "Currency": "FIM"
+  },
+  "fr": {
+    "Nation": "法國",
+    "Language": "法朗",
+    "Currency": "FRF"
+  },
+  "fr-be": {
+    "Nation": "比利時",
+    "Language": "法朗",
+    "Currency": "BEF"
+  },
+  "fr-ca": {
+    "Nation": "加拿大",
+    "Language": "元",
+    "Currency": "CAD"
+  },
+  "fr-ch": {
+    "Nation": "瑞士",
+    "Language": "法朗",
+    "Currency": "CHF"
+  },
+  "fr-lu": {
+    "Nation": "盧森堡",
+    "Language": "歐元(法朗)",
+    "Currency": "LUF"
+  },
+  "gd": {
+    "Nation": "蘇格蘭",
+    "Language": "英鎊",
+    "Currency": "GBP"
+  },
+  "gd-ie": {
+    "Nation": "愛爾蘭",
+    "Language": "英鎊",
+    "Currency": "IEP"
+  },
+  "de": {
+    "Nation": "德國",
+    "Language": "歐元(馬克)",
+    "Currency": "DEM"
+  },
+  "de-ch": {
+    "Nation": "瑞士",
+    "Language": "法朗",
+    "Currency": "CHF"
+  },
+  "de-at": {
+    "Nation": "奧地利",
+    "Language": "歐元",
+    "Currency": "EUR"
+  },
+  "de-lu": {
+    "Nation": "盧森堡",
+    "Language": "歐元(法朗)",
+    "Currency": ""
+  },
+  "de-li": {
+    "Nation": "列支敦斯登",
+    "Language": "法朗",
+    "Currency": "CHF"
+  },
+  "el": {
+    "Nation": "希臘",
+    "Language": "歐元",
+    "Currency": "EUR"
+  },
+  "he": {
+    "Nation": "以色列",
+    "Language": "新謝克爾",
+    "Currency": "NIS"
+  },
+  "hi": {
+    "Nation": "印度",
+    "Language": "盧比",
+    "Currency": "INR"
+  },
+  "hu": {
+    "Nation": "匈牙利",
+    "Language": "福林",
+    "Currency": "HUF"
+  },
+  "is": {
+    "Nation": "冰島",
+    "Language": "克朗",
+    "Currency": "ISK"
+  },
+  "id": {
+    "Nation": "印尼",
+    "Language": "印尼盾",
+    "Currency": "IDR"
+  },
+  "it": {
+    "Nation": "義大利",
+    "Language": "里拉",
+    "Currency": "ITL"
+  },
+  "it-ch": {
+    "Nation": "瑞士",
+    "Language": "法朗",
+    "Currency": "CHF"
+  },
+  "ja": {
+    "Nation": "日本",
+    "Language": "圓",
+    "Currency": "JPY"
+  },
+  "ko": {
+    "Nation": "韓國",
+    "Language": "元",
+    "Currency": "KRW"
+  },
+  "lv": {
+    "Nation": "拉脫維亞",
+    "Language": "歐元",
+    "Currency": "EUR"
+  },
+  "lt": {
+    "Nation": "立陶宛",
+    "Language": "歐元",
+    "Currency": "EUR"
+  },
+  "mk": {
+    "Nation": "馬其頓共和國",
+    "Language": "代納爾",
+    "Currency": "MKD"
+  },
+  "ms": {
+    "Nation": "馬來西亞",
+    "Language": "令吉",
+    "Currency": "MYR"
+  },
+  "mt": {
+    "Nation": "馬爾他",
+    "Language": "歐元",
+    "Currency": "EUR"
+  },
+  "no": {
+    "Nation": "挪威",
+    "Language": "克朗",
+    "Currency": "NOK"
+  },
+  "pl": {
+    "Nation": "波蘭",
+    "Language": "茲羅提",
+    "Currency": "PLN"
+  },
+  "pt-br": {
+    "Nation": "巴西",
+    "Language": "雷亞爾",
+    "Currency": "BRL"
+  },
+  "pt": {
+    "Nation": "葡萄牙",
+    "Language": "歐元",
+    "Currency": "EUR"
+  },
+  "rm": {
+    "Nation": "羅馬",
+    "Language": "列伊",
+    "Currency": "RON"
+  },
+  "ro": {
+    "Nation": "羅馬尼亞",
+    "Language": "列伊",
+    "Currency": "RON"
+  },
+  "ro-mo": {
+    "Nation": "摩爾多瓦共和國",
+    "Language": "列伊",
+    "Currency": "RON"
+  },
+  "ru": {
+    "Nation": "俄羅斯",
+    "Language": "盧布",
+    "Currency": "RUB"
+  },
+  "ru-mo": {
+    "Nation": "摩爾多瓦共和國",
+    "Language": "列伊",
+    "Currency": "RON"
+  },
+  "ru-mi": {
+    "Nation": "",
+    "Language": "",
+    "Currency": ""
+  },
+  "sz": {
+    "Nation": "薩米",
+    "Language": "克朗",
+    "Currency": "NOK"
+  },
+  "sr": {
+    "Nation": "賽爾維亞",
+    "Language": "第納爾",
+    "Currency": "RSD"
+  },
+  "sk": {
+    "Nation": "斯洛伐克",
+    "Language": "歐元(克朗)",
+    "Currency": "EUR"
+  },
+  "sl": {
+    "Nation": "斯洛維尼亞",
+    "Language": "歐元",
+    "Currency": "EUR"
+  },
+  "sb": {
+    "Nation": "德國",
+    "Language": "歐元(馬克)",
+    "Currency": "DEM"
+  },
+  "es": {
+    "Nation": "西班牙",
+    "Language": "歐元(比塞塔)",
+    "Currency": "ESP"
+  },
+  "es-ar": {
+    "Nation": "阿根廷",
+    "Language": "披索",
+    "Currency": "ARS"
+  },
+  "es-gt": {
+    "Nation": "瓜地馬拉",
+    "Language": "格查爾",
+    "Currency": "GTQ"
+  },
+  "es-cr": {
+    "Nation": "哥斯大黎加",
+    "Language": "柯朗",
+    "Currency": "CRC"
+  },
+  "es-pa": {
+    "Nation": "巴拿馬",
+    "Language": "巴波亞",
+    "Currency": "PAB"
+  },
+  "es-do": {
+    "Nation": "多明尼加",
+    "Language": "披索",
+    "Currency": "DOP"
+  },
+  "es-mx": {
+    "Nation": "墨西哥",
+    "Language": "披索",
+    "Currency": "MXN"
+  },
+  "es-ve": {
+    "Nation": "委內瑞拉",
+    "Language": "玻利瓦",
+    "Currency": "VEF"
+  },
+  "es-co": {
+    "Nation": "哥倫比亞",
+    "Language": "披索",
+    "Currency": "COP"
+  },
+  "es-pe": {
+    "Nation": "秘魯",
+    "Language": "索爾",
+    "Currency": "PEN"
+  },
+  "es-ec": {
+    "Nation": "厄瓜多",
+    "Language": "蘇克雷",
+    "Currency": "ECS"
+  },
+  "es-cl": {
+    "Nation": "智利",
+    "Language": "披索",
+    "Currency": "CLP"
+  },
+  "es-uy": {
+    "Nation": "烏拉圭",
+    "Language": "披索",
+    "Currency": "UYU"
+  },
+  "es-py": {
+    "Nation": "巴拉圭",
+    "Language": "瓜拉尼",
+    "Currency": "PYG"
+  },
+  "es-bo": {
+    "Nation": "玻利維亞",
+    "Language": "諾",
+    "Currency": "BOB"
+  },
+  "es-sv": {
+    "Nation": "薩爾瓦多",
+    "Language": "柯朗",
+    "Currency": "SVC"
+  },
+  "es-hn": {
+    "Nation": "宏都拉斯",
+    "Language": "倫皮拉",
+    "Currency": "HNL"
+  },
+  "es-ni": {
+    "Nation": "尼加拉瓜",
+    "Language": "科多巴",
+    "Currency": "NIO"
+  },
+  "es-pr": {
+    "Nation": "波多黎各",
+    "Language": "美金",
+    "Currency": "USD"
+  },
+  "sx": {
+    "Nation": "荷屬聖馬丁",
+    "Language": "美金",
+    "Currency": "USD"
+  },
+  "sv": {
+    "Nation": "瑞典",
+    "Language": "克朗",
+    "Currency": "SEK"
+  },
+  "sv-fi": {
+    "Nation": "芬蘭",
+    "Language": "馬克",
+    "Currency": "FIM"
+  },
+  "th": {
+    "Nation": "泰國",
+    "Language": "銖",
+    "Currency": "THB"
+  },
+  "ts": {
+    "Nation": "莫三比克",
+    "Language": "梅蒂卡爾",
+    "Currency": "MZN"
+  },
+  "tn": {
+    "Nation": "波札那",
+    "Language": "普拉",
+    "Currency": "BWP"
+  },
+  "tr": {
+    "Nation": "土耳其",
+    "Language": "里拉",
+    "Currency": "TRY"
+  },
+  "uk": {
+    "Nation": "烏克蘭",
+    "Language": "格里夫納",
+    "Currency": "UAH"
+  },
+  "ur": {
+    "Nation": "巴基斯坦",
+    "Language": "盧比",
+    "Currency": "PKR"
+  },
+  "ve": {
+    "Nation": "辛巴威",
+    "Language": "元",
+    "Currency": "ZWD"
+  },
+  "vi": {
+    "Nation": "越南",
+    "Language": "盾",
+    "Currency": "VND"
+  },
+  "xh": {
+    "Nation": "南非",
+    "Language": "蘭特",
+    "Currency": "ZAR"
+  },
+  "ji": {
+    "Nation": "俄羅斯",
+    "Language": "盧布",
+    "Currency": "RUB"
+  },
+  "zu": {
+    "Nation": "南非",
+    "Language": "蘭特",
+    "Currency": "ZAR"
+  }
+}}

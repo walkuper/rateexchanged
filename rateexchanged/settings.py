@@ -14,7 +14,10 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+#MEDIA_ROOT='/var/www/media/'
+MEDIA_ROOT='/Users/Walkup/rateanywhere/rateexchanged/'
+MEDIA_URL = 'http://127.0.0.1:8000/static/'
+#MEDIA_URL = 'http://walkupdt.pythonanywhere.com/static/'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
