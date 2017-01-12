@@ -59,51 +59,25 @@ def bankpack(request):
     for i in range(len(getjson)):
         print (getjson[i]['bankname'])
 
-def test(requestion):
-    '''
-    request = urllib.request.Request("http://127.0.0.1:8000/static/java/currency_type.json")
-    response = urllib.request.urlopen(request)
-    
-    #print (response.read().decode('utf-8'))
-    
-    cashholder = response.read().decode('utf-8')
-    r = cashholder
-    '''
+def test(request):
     rArr=[]
-    r = requests.get("http://127.0.0.1:8000/static/java/currency_type.json").json()
-    print (type(r))
+    r = requests.get('http://127.0.0.1:8000/static/java/currency_type.json').json()
     rArr.append(r)
     rr = json.dumps(rArr)
-    print ('rr type :' + str(type(rr)))
-    print ('rr len:' + str(len(rr)))
     rrr = json.loads(rr)
-    print ('rrr type :' + str(type(rrr)))
-    print ('rrr len :' + str(len(rrr)))
-    return render(requestion, 'test.html', {
+    return render(request, 'test.html', {
            'r': rrr,
            })
     #return render_to_response('test.html',locals())
-'''
-class CType(object):
-    def __init__(self, Nation, Language, Currency):
-        self = self
-        self.Nation = Nation
-        self.Language = Language
-        self.Currency = Currency
-
-def object_decoder(obj):
-    if '__type__' in obj and obj['__type__'] == 'CType':
-        return CType(obj,obj['Nation'], obj['Language'], obj['Currency'])
-    return obj
-
-json.loads('http://127.0.0.1:8000/static/java/currency_type.json', object_hook=object_decoder)
-
-print (type(CType))
-'''
 
 
 def test2(request):
-    return render_to_response('test2.html',locals())
+    r = requests.get(r'http://tw.rter.info/capi.php')
+    html = r.content
+    js = json.loads(html)
+    print (js['USDHKD']['Exrate'])
+    return render(request, 'test2.html',{'html': HttpResponse(html)})
+    #return render_to_response('test2.html',locals())
 
 base_dir = settings.BASEDIR()
 filter = base_dir + "/templates/" + ""
