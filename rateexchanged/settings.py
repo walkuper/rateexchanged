@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graparate',
+    'crispy_forms',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -89,7 +90,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'zh-tw'
+LANGUAGE_CODE = 'zh-hant'
 
 TIME_ZONE = 'UTC'
 

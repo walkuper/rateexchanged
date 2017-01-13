@@ -1,4 +1,10 @@
 from django.db import models
+from datetime import datetime
+from django.utils.http import urlquote
+from django.utils.translation import ugettext_lazy as _
+from django.core.mail import send_mail
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
+from django.core import validators
 from django.contrib import admin
 from django.template.loader import render_to_string
 
@@ -21,10 +27,10 @@ class BankPack(models.Model):
 	def goatm(self):
 		goatm_path = """<a href="%s" target="_blank">網路ATM</a>""" % self.webatm
 		return goatm_path
-	
+
 	def __str__(self):
 		return self.title
-		
+
 class ExATM(models.Model):
 	"""外幣ATM服務據點"""
 	city = models.CharField(max_length=10) #所在城市
@@ -44,13 +50,17 @@ class Nation(models.Model):
 	#maincurrency = models.ForeignKey(CurrencyPack) #主要貨幣
 
 class CurrencyPack(models.Model):
-	bankpub = models.ForeignKey(BankPack)
+	bankpub = models.ForeignKey(BankPack) #需要先有銀行資訊才不會出錯，否則會有no such column: graparate_currencypack.bankpub_id的錯誤
 	currencyname = models.CharField(max_length=50) #貨幣名稱 新台幣
-	usecountry = models.ForeignKey(Nation) #使用國家，一個國家可能會有兩三種貨幣流通
-	#image = models.ImageField(upload_to = "graparate/static/images", blank=True)
+	usecountry = models.ManyToManyField(Nation) #使用國家，一個國家可能會有兩三種貨幣流通
+	image = models.ImageField(upload_to = "graparate/static/images", blank=True)
 	currencyunit = models.CharField(max_length=20) #單位 里拉、元、披索、銖、法朗
 	currencycode = models.CharField(max_length=20) #TWD、USD
 	created_at = models.DateTimeField(auto_now_add=True) #建立時間
+
+	#讓CurrencyPackAdmin取得多對多的資料欄位
+	def get_usecountry(self):
+		return "\n".join([u.nationname for u in self.usecountry.all()])
 
 	def callspotbuy(CurrencyRate):
 		csb = spotbuy
@@ -59,15 +69,15 @@ class CurrencyPack(models.Model):
 	def __str__(self):
 		return self.currencyname
 
-	#def currency_flags(self):
-        #imagepath = u'<img src="%s" width="100"/>' % self.image.path
-        #return imagepath
-        #currency_flags.allow_tags = True
-        #return render_to_string('flags.html',{'image':self})
-		
+	def currency_flags(self):
+		imagepath = u'<img src="%s" width="100">' % self.image.url
+		return imagepath
+        #currency_flags.allow_tags = True #替代方案
+        #return render_to_string('flags.html',{'image': self}) #替代方案
+
 
 class CurrencyRate(models.Model):
-	spotbuy = models.DecimalField(max_digits=4,decimal_places=3,default=0) #買進，小數點後三位的四位數字 
+	spotbuy = models.DecimalField(max_digits=4,decimal_places=3,default=0) #買進，小數點後三位的四位數字
 	spotsell = models.DecimalField(max_digits=4,decimal_places=3,default=0) #賣出，小數點後三位的四位數字
 	billbuy = models.DecimalField(max_digits=4,decimal_places=3,default=0) #即期買進，小數點後三位的四位數字
 	billsell = models.DecimalField(max_digits=4,decimal_places=3,default=0) #即期賣出，小數點後三位的四位數字
@@ -83,9 +93,9 @@ class ExATMAdmin(admin.ModelAdmin):
 	list_filter = ('city',)
 
 class CurrencyPackAdmin(admin.ModelAdmin):
-	list_display = ('currencyname','currencycode','usecountry','currencyunit','callspotbuy')
-		
-		
+	list_display = ('currencyname','currencyname','currencycode','get_usecountry','currencyunit','callspotbuy')
+
+
 admin.site.register(BankPack,BankPackAdmin)
 admin.site.register(ExATM,ExATMAdmin)
 admin.site.register(CurrencyPack,CurrencyPackAdmin)
