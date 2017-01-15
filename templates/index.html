@@ -48,7 +48,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZZS3GV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
-<!-- End Google Tag Manager (noscript) --> 
+<!-- End Google Tag Manager (noscript) -->
 <!-- Facebook SDK -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -57,8 +57,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=728062920645666";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script> 
-<!-- End of Facebook SDK --> 
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End of Facebook SDK -->
 <!-- Pagination -->
 <nav id="cd-vertical-nav" >
   <ul class="slider">
@@ -69,12 +69,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <li> <a href="#three" data-number="4"> <span class="cd-dot"></span> <span class="cd-label label-bg">Multiple Currency Exchange</span> </a> </li>
     {% else %}
     {% endif %}
-    
+
     {% if request.user.is_authenticated %}
     <li> <a href="#four" data-number="5"> <span class="cd-dot"></span> <span class="cd-label label-bg">History</span> </a> </li>
     {% else %}
-    {% endif %} 
-    
+    {% endif %}
+
     <!-- other navigation items here-->
     <li> <a href="#contact" data-number="9999"> <span class="cd-dot"></span> <span class="cd-label label-bg">Contact Us</span> </a> </li>
   </ul>
@@ -92,7 +92,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       {% endif %} </nav>
   </div>
 </header>
-<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> 
+<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 <!-- Banner -->
 <section id="banner">
@@ -145,41 +145,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
           <header>
             <h2>Bank Rate: <span>Where to get them</span></h2>
           </header>
-          <article>
-            <h3></h3>
+            <h3>TWD to USD</h3>
             <div class="image fit"> </div>
-            <p>many bank & rate</p>
-            <table>
-              <tr>
-                <td>銀行名稱</td>
-                <td>現鈔買入</td>
-                <td>現鈔賣出</td>
-                <td>即期買入</td>
-                <td>即期賣出</td>
-              </tr>      
+            <div class="table">
+              <div class="divcaption">
+                <div class="divtd">銀行名稱</div>
+                <div class="divtd">現鈔買入</div>
+                <div class="divtd">現鈔賣出</div>
+                <div class="divtd">即期買入</div>
+                <div class="divtd">即期賣出</div>
+              </div>
               {% for d in data %}
-              <tr>
-               <td>{{d.bankname}}</td>
-               <td>{{d.billbuy}}</td>
-               <td>{{d.billsell}}</td>
-               <td>{{d.spotbuy}}</td>
-               <td>{{d.spotsell}}</td>
-              </tr>
+              <div class="divtr">
+               <div class="divtd">{{d.bankname}}</div>
+               <div class="divtd">{{d.billbuy}}</div>
+               <div class="divtd">{{d.billsell}}</div>
+               <div class="divtd">{{d.spotbuy}}</div>
+               <div class="divtd">{{d.spotsell}}</div>
+              </div>
               {% endfor %}
-            </table>
-          </article>
-          <article class="alt">
-            <h3></h3>
-            <div class="image fit"> </div>
-            <p>so so so many</p>
-          </article>
+            </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Three --> 
+<!-- Three -->
 {% if request.user.is_authenticated %}
 <section id="three">
   <div class="cover_layer white_bg full_page"></div>
@@ -217,9 +209,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </section>
 {% else %}
-{% endif %} 
+{% endif %}
 
-<!-- Four --> 
+<!-- Four -->
 {% if request.user.is_authenticated %}
 <section id="four">
   <div class="container inner">
@@ -239,7 +231,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </section>
 {% else %}
-{% endif %} 
+{% endif %}
 
 <!-- Contact -->
 <section id="contact">
@@ -309,14 +301,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </section>
 
-<!-- Scripts --> 
-<script src="{% static 'js/jquery.min.js' %}"></script> 
-<script src="{% static 'js/skel.min.js' %}"></script> 
-<script src="{% static 'js/util.js' %}"></script> 
-<script src="{% static 'js/main.js' %}"></script> 
-<!-- jQuery (Bootstrap 所有外掛均需要使用) --> 
-<script src="{% static 'js/jquery.min.js' %}"></script> 
-<!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 --> 
+<!-- Scripts -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/skel.min.js' %}"></script>
+<script src="{% static 'js/util.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<!-- jQuery (Bootstrap 所有外掛均需要使用) -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </body>
 </html>

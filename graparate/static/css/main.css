@@ -1585,7 +1585,7 @@
 				font-size: 12pt;
 			}
 
-			
+
 
 		}
 
@@ -3169,6 +3169,28 @@
     	margin: auto 10px;
 	}
 
+/* Table */
+
+.divtable {
+	display: table;
+	width: 100%;
+}
+.divtr {
+	display: table-row;
+}
+.divtd {
+	display: table-cell;
+}
+.divheader {
+	display: table-header-group;
+}
+.divfooter {
+	display: table-footer-group;
+}
+.divcaption {
+	display: table-caption;
+}
+
 /* Menu */
 
 	#nav {
@@ -3579,7 +3601,7 @@
 		width: 100%;
 		opacity: 0.45;
 	}
-	.black_bg.half_page_l { 
+	.black_bg.half_page_l {
 		width: 80%;
 	    background-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
 	    background-image: -o-linear-gradient(right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
@@ -3600,7 +3622,7 @@
 	    background-image: -moz-linear-gradient(right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
 	    background-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
 	}
-	.black_bg.half_page_r { 
+	.black_bg.half_page_r {
 		width: 80%;
 		right: 0;
 	    background-image: -webkit-linear-gradient(right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
@@ -3608,7 +3630,7 @@
 	    background-image: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
 	    background-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
 	}
-	.black_bg.half3_page_r { 
+	.black_bg.half3_page_r {
 		width: 63.3%;
 		right: 0;
 	    background-image: -webkit-linear-gradient(right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
@@ -3616,7 +3638,7 @@
 	    background-image: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
 	    background-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
 	}
-	.black_bg.half4_page_r { 
+	.black_bg.half4_page_r {
 		width: 55%;
 		right: 0;
 	    background-image: -webkit-linear-gradient(right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
@@ -3624,7 +3646,7 @@
 	    background-image: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
 	    background-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,.01) 100%);
 	}
-	.white_bg.half_page_l { 
+	.white_bg.half_page_l {
 		width: 80%;
 	    background-image: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
 	    background-image: -o-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
@@ -3645,7 +3667,7 @@
 	    background-image: -moz-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
 	    background-image: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
 	}
-	.white_bg.half_page_r { 
+	.white_bg.half_page_r {
 		width: 80%;
 		right: 0;
 	    background-image: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
@@ -3653,7 +3675,7 @@
 	    background-image: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
 	    background-image: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
 	}
-	.white_bg.half3_page_r { 
+	.white_bg.half3_page_r {
 		width: 63.3%;
 		right: 0;
 	    background-image: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
@@ -3661,7 +3683,7 @@
 	    background-image: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
 	    background-image: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
 	}
-	.white_bg.half4_page_r { 
+	.white_bg.half4_page_r {
 		width: 55%;
 		right: 0;
 	    background-image: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,.01) 100%);
@@ -3693,7 +3715,7 @@
 	#main {
 		padding: 4em 0 2em 0;
 	}
-	
+
 	.label-bg {
     	background-color: rgba(0,0,0,.15);
     	border-radius: 15px;
@@ -4108,4 +4130,3 @@
 			}
 
 		}
-
