@@ -149,6 +149,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
             <h3></h3>
             <div class="image fit"> </div>
             <p>many bank & rate</p>
+            <table>
+              <tr>
+                <td>銀行名稱</td>
+                <td>現鈔買入</td>
+                <td>現鈔賣出</td>
+                <td>即期買入</td>
+                <td>即期賣出</td>
+              </tr>      
+              {% for d in data %}
+              <tr>
+               <td>{{d.bankname}}</td>
+               <td>{{d.billbuy}}</td>
+               <td>{{d.billsell}}</td>
+               <td>{{d.spotbuy}}</td>
+               <td>{{d.spotsell}}</td>
+              </tr>
+              {% endfor %}
+            </table>
           </article>
           <article class="alt">
             <h3></h3>
