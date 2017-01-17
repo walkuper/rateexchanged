@@ -1,0 +1,47 @@
+#menubar .mbr-brand__name {
+  font-size: 23px;
+}
+#menubar.mbr-navbar--stuck .mbr-navbar__section {
+  background: #2c2c2c;
+}
+#menubar .mbr-navbar__hamburger {
+  color: #ffffff;
+}
+#one H1 {
+  text-align: left;
+}
+#two .mbr-header .mbr-header__text {
+  text-align: left;
+  color: #fff;
+}
+#two .mbr-header .mbr-header__subtext {
+  text-align: left;
+  color: #fff;
+}
+#two .mbr-article {
+  color: #000;
+}
+#four P {
+  color: #28324e;
+}
+#four .mbr-section__col .mbr-header__text {
+  text-align: left;
+}
+#menu-b .mbr-brand__name {
+  font-size: 23px;
+}
+#menu-b.mbr-navbar--stuck .mbr-navbar__section {
+  background: #2c2c2c;
+}
+#menu-b .mbr-navbar__hamburger {
+  color: #ffffff;
+}
+#menu-n .mbr-brand__name {
+  font-size: 23px;
+}
+#menu-n.mbr-navbar--stuck .mbr-navbar__section {
+  background: #2c2c2c;
+}
+#menu-n .mbr-navbar__hamburger {
+  color: #ffffff;
+}

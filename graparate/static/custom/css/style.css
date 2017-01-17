@@ -1,0 +1,47 @@
+{% load staticfiles %}
+@import url({% static'fontawesome/font-awesome.min.css' %});
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese|Roboto");
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:300,400,700|Ubuntu");
+
+
+.carousel-control {
+  display: none;
+}
+
+a.logo {
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+  font-weight: 300;
+  color: rgb(229, 71, 75);
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+a.logo:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  h7.disclaimer {
+    	position: fixed;
+    	left: 5%;
+    	right: 5%;
+    	bottom: 1.5%;
+    	z-index:10000;
+    	font-size: 9px;
+    	font-weight: 500;
+    	color: #000;
+    	text-shadow: 1px 1px 0 rgba(255,255,255, 1);
+    	background-color: rgba(255,255,255,.18);
+    	border-radius: 9px;
+	}
+
+  img.user-photo {
+    	width: 30px;
+    	border-radius: 50%;
+    	border: 2px solid #fff;
+    	display: inline;
+    	margin: auto 10px;
+	}
