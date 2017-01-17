@@ -41,7 +41,7 @@ def register(request):
     return render_to_response('register.html',locals())
 
 def index(request):
-    txt=json.loads(DataPipe())
+    txt=json.loads(DataPipe("AUD"))
     print (len(txt))
     return render(request,'index.html',{'data':txt})
     #return render_to_response('index.html',locals())
