@@ -41,9 +41,15 @@ def register(request):
     return render_to_response('register.html',locals())
 
 def index(request):
+    currencyurl = u'http://127.0.0.1:8000/static/java/currency_type.json'
+    url = u'https://tw.rter.info/capi.php'
+    jsonparser1 = requests.get(currencyurl).json()
+    jsonparser2 = requests.get(url).json()
+    print(jsonparser1)
+    #新增複數幣別取值
     txt=json.loads(DataPipe("AUD"))
-    print (len(txt))
-    return render(request,'index.html',{'data':txt})
+    return render(request,'index.html',{'data':txt, 'ctype':jsonparser1, 'yrate':jsonparser2})
+
     #return render_to_response('index.html',locals())
 
 def grsp(request):
@@ -51,21 +57,24 @@ def grsp(request):
     return HttpResponse(txt)
 
 def bankpack(request):
-    #url = 'https://test-pro-tiomor4n.c9.io/here/'
-    url = "http://127.0.0.1:8000/static/java/test.json"
-    jsonparser = urllib.urlopen(url).read()
-    #jsonparser = urlopen()
-    getdata = jsonparser.read()
-    pos_start = getdata.find('[')
-    pos_end = getdata.find(']')
-    usedata = getdata[(pos_start):pos_end]
-    getjson = json.loads(usedata)
-    for i in range(len(getjson)):
-        print (getjson[i]['bankname'])
+    currencyurl = u'http://127.0.0.1:8000/static/java/currency_type.json'
+    url = u'https://tw.rter.info/capi.php'
+    #txt=json.loads(url)
+    jsonparser1 = requests.get(url).json()
+    jsonparser2 = requests.get(url).json()
+    print (type(jsonparser))
+    #getdata = jsonparser.read()
+    #pos_start = getdata.find('[')
+    #pos_end = getdata.find(']')
+    #usedata = getdata[(pos_start):pos_end]
+    #getjson = json.loads(usedata)
+    #for i in range(len(getjson)):
+    #    print (getjson[i]['Exrate'])
+    return render(request,'index.html',{'yrate':jsonparser})
 
 def test(request):
     rArr=[]
-    r = requests.get("http://127.0.0.1:8000/static/java/currency_type.json").json()
+    r = requests.get(u"http://127.0.0.1:8000/static/java/currency_type.json").json()
     print (type(r))
     rArr.append(r)
     rr = json.dumps(rArr)

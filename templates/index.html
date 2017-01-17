@@ -203,7 +203,17 @@
                 <div class="row"><div class=" col-sm-6 col-sm-offset-6">
                     <div class="mbr-hero animated fadeInUp">
                         <h1 class="mbr-hero__text">CHECK THE RATE</h1>
-                        <p class="mbr-hero__subtext">It's currency you hold right now: TWD<br>You want to exchange to: USD<br>How much do you have: 10,000 TWD<br>You can Get 333.33 USD</p>
+                        <!-- <p class="mbr-hero__subtext">It's currency you hold right now: TWD<br>You want to exchange to: USD<br>How much do you have: 10,000 TWD<br>You can Get 333.33 USD</p> -->
+                          <select class="form-control" role="menu" aria-labelledby="dropdownMenu1">
+                            {% for ct in ctype %}
+                            <option role="presentation"><span class=""><img class="img-responsive flags" src="{% static 'images/flags/' %}{{ ct.Currency }}.png" /><div>{{ ct.Nation }}</div></span></option>
+                            {% endfor %}
+                          </select>
+                        <p class="mbr-header__subtext">
+                          {% for r in yrate %}
+                          {{ r }}
+                          {% endfor %}
+                        </p>
                     </div>
                     <div class="mbr-buttons btn-inverse mbr-buttons--left"><a class="mbr-buttons__btn btn btn-lg btn-warning animated fadeInUp delay" href="https://mobirise.com">FIGURE IT OUT MORE</a></div>
                 </div></div>
@@ -236,6 +246,7 @@
     <th>Bill Sell</th>
     <th>Spot Buy</th>
     <th>Spot Sell</th>
+    <th>Refresh Time</th>
   </tr>
 </thead>
   <tbody>{% for d in data %}
@@ -245,11 +256,13 @@
     <td class="info">{{ d.billsell }}</td>
     <td class="warning">{{ d.spotbuy }}</td>
     <td class="danger">{{ d.spotsell }}</td>
+    <td class="active">{{ d.refreshtime }}</td>
   </tr>
   {% endfor %}
 </tbody>
   <tfoot>
     <tr>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -477,19 +490,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section--relative mbr-section--fixed-size hidden-xs hidden-sm" id="social-follow" style="background-color: rgb(68, 68, 68);">
-
-
-    <div class="mbr-section__container container">
-        <div class="mbr-header mbr-header--inline row" style="padding-top: 0px; padding-bottom: 0px;">
-            <div class="col-sm-4">
-                <h3 class="mbr-header__text">FOLLOW US</h3>
-            </div>
-            <div class="mbr-social-icons mbr-social-icons--style-1 col-sm-8"><a class="mbr-social-icons__icon socicon-bg-twitter" title="Twitter" target="_blank" href="https://twitter.com/mobirise"><i class="socicon socicon-twitter"></i></a> <a class="mbr-social-icons__icon socicon-bg-facebook" title="Facebook" target="_blank" href="https://www.facebook.com/pages/Mobirise/1616226671953247"><i class="socicon socicon-facebook"></i></a> <a class="mbr-social-icons__icon socicon-bg-googleplus" title="Google+" target="_blank" href="https://plus.google.com/u/0/+Mobirise/posts"><i class="socicon socicon-googleplus"></i></a> <a class="mbr-social-icons__icon socicon-bg-youtube" title="YouTube" target="_blank" href="http://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw"><i class="socicon socicon-youtube"></i></a> <a class="mbr-social-icons__icon socicon-bg-instagram" title="Instagram" target="_blank" href="https://instagram.com/mobirise/"><i class="socicon socicon-instagram"></i></a>  <a class="mbr-social-icons__icon socicon-bg-github" title="GitHub" target="_blank" href="https://github.com/Mobirise"><i class="socicon socicon-github"></i></a>   <a class="mbr-social-icons__icon socicon-bg-linkedin" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/mobirise"><i class="socicon socicon-linkedin"></i></a> </div>
         </div>
     </div>
 </section>

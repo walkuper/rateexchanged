@@ -1,5 +1,5 @@
 # -*- coding: utf8 -*-
-def DataPipe(cncode='USD'):
+def DataPipe():
 	from bs4 import BeautifulSoup as bs
 	import requests
 	import sys
@@ -7,28 +7,13 @@ def DataPipe(cncode='USD'):
 	sys.setdefaultencoding='utf8'
 	lineArr = []
 
-	namedict={u"銀行名稱":"bankname",
-              u"現鈔買入":"billbuy",
-              u"現鈔賣出":"billsell",
-              u"即期買入":"spotbuy",
-              u"即期賣出":"spotsell",
-              u"更新時間":"refreshtime",
-              u"現鈔手續費":"charge"}
-
-   cndict={
-	       "USD":"http://www.findrate.tw/USD/#.WGUjWVN97IU",
-	       "JPY":"http://www.findrate.tw/JPY/#.WH5AFlN97IU",
-	       "CNY":"http://www.findrate.tw/CNY/#.WH5ANFN97IU",
-	       "EUR":"http://www.findrate.tw/EUR/#.WH5AT1N97IU",
-	       "HKD":"http://www.findrate.tw/HKD/#.WH5AbVN97IU",
-	       "GBP":"http://www.findrate.tw/GBP/#.WH5BWVN97IU",
-	       "AUD":"http://www.findrate.tw/AUD/#.WH5BdVN97IU"
-	}
+	namedict={u"type":"currencytype",
+              u"現鈔買入":"Exrate",
+              u"現鈔賣出":"UTC"}
 
 	result = ''
 	resultArr = []
-	#urlToVisit = 'http://www.findrate.tw/USD/#.WGUjWVN97IU'
-	urlToVisit = cndict[cncode]
+	urlToVisit = 'https://tw.rter.info/capi.php'
 	response = requests.get(urlToVisit)
 	html = response.content
 	soup = bs(html,"html.parser")

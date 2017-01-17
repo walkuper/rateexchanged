@@ -45,3 +45,13 @@ a.logo:hover {
     	display: inline;
     	margin: auto 10px;
 	}
+  .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .flags {
+    display: block;
+    max-width: 45px;
+  }
