@@ -50,10 +50,6 @@ def index(request):
     return render(request,'index.html',{'data':txt, 'ctype':jsonparser1, 'yrate':jsonparser2})
     #return render_to_response('index.html',locals())
 
-def grsp(request):
-    txt = DataPipe()
-    return HttpResponse(txt)
-
 def bankpack(request):
     currencyurl = u'http://127.0.0.1:8000/static/java/currency_type.json'
     url = u'https://tw.rter.info/capi.php'
