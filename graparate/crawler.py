@@ -7,17 +7,13 @@ def DataPipe():
 	sys.setdefaultencoding='utf8'
 	lineArr = []
 
-	namedict={u"銀行名稱":"bankname",
-              u"現鈔買入":"billbuy",
-              u"現鈔賣出":"billsell",
-              u"即期買入":"spotbuy",
-              u"即期賣出":"spotsell",
-              u"更新時間":"refreshtime",
-              u"現鈔手續費":"charge"}
+	namedict={u"type":"currencytype",
+              u"現鈔買入":"Exrate",
+              u"現鈔賣出":"UTC"}
 
 	result = ''
 	resultArr = []
-	urlToVisit = 'http://www.findrate.tw/USD/'
+	urlToVisit = 'https://tw.rter.info/capi.php'
 	response = requests.get(urlToVisit)
 	html = response.content
 	soup = bs(html,"html.parser")

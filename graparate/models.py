@@ -20,7 +20,7 @@ class BankPack(models.Model):
 	bankaddress = models.CharField(max_length=400, blank=True) #台北市中正區重慶南路一段10號一樓
 	bankphone = models.CharField(max_length=40, blank=True) #電話
 	chargefee = models.CharField(max_length=400, blank=True) #各家計算
-	webatm = models.URLField() #網址
+	webatm = models.URLField(blank=True) #網址
 	update_time = models.DateTimeField(auto_now=True) #更新時間
 	created_at = models.DateTimeField(auto_now_add=True) #建立時間
 
@@ -29,7 +29,7 @@ class BankPack(models.Model):
 		return goatm_path
 
 	def __str__(self):
-		return self.title
+		return self.bankname
 
 class ExATM(models.Model):
 	"""外幣ATM服務據點"""
@@ -49,11 +49,14 @@ class Nation(models.Model):
 	languagecode = models.CharField(max_length=10) #語言代碼 zh-tw
 	#maincurrency = models.ForeignKey(CurrencyPack) #主要貨幣
 
+	def __str__(self):
+		return self.nationname
+
 class CurrencyPack(models.Model):
-	bankpub = models.ForeignKey(BankPack) #需要先有銀行資訊才不會出錯，否則會有no such column: graparate_currencypack.bankpub_id的錯誤
+	bankpub = models.ManyToManyField(BankPack, blank=True) #需要先有銀行資訊才不會出錯，否則會有no such column: graparate_currencypack.bankpub_id的錯誤
 	currencyname = models.CharField(max_length=50) #貨幣名稱 新台幣
 	usecountry = models.ManyToManyField(Nation) #使用國家，一個國家可能會有兩三種貨幣流通
-	image = models.ImageField(upload_to = "graparate/static/images", blank=True)
+	image = models.ImageField(upload_to = "graparate/static/images/", blank=True)
 	currencyunit = models.CharField(max_length=20) #單位 里拉、元、披索、銖、法朗
 	currencycode = models.CharField(max_length=20) #TWD、USD
 	created_at = models.DateTimeField(auto_now_add=True) #建立時間
@@ -70,11 +73,10 @@ class CurrencyPack(models.Model):
 		return self.currencyname
 
 	def currency_flags(self):
-		imagepath = u'<img src="%s" width="100">' % self.image.url
-		return imagepath
+		#imagepath = u'<img src="%s" width="100">' % (self.image.url)
+		#return imagepath
         #currency_flags.allow_tags = True #替代方案
-        #return render_to_string('flags.html',{'image': self}) #替代方案
-
+		return render_to_string('flags.html',{'image':self})
 
 class CurrencyRate(models.Model):
 	spotbuy = models.DecimalField(max_digits=4,decimal_places=3,default=0) #買進，小數點後三位的四位數字

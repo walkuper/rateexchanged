@@ -22,3 +22,9 @@
 graparate/__pycache__/crawer.cpython-35.pyc
 
 graparate/__pycache__/crawer.cpython-35.pyc
+
+*.pyc
+
+graparate/__pycache__/models.cpython-35.pyc
+
+graparate/__pycache__/views.cpython-35.pyc
