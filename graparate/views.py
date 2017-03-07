@@ -46,8 +46,10 @@ def index(request):
     jsonparser1 = requests.get(currencyurl).json()
     jsonparser2 = requests.get(url).json()
     print(jsonparser1)
-    txt=json.loads(DataPipe())
+    #新增複數幣別取值
+    txt=json.loads(DataPipe("AUD"))
     return render(request,'index.html',{'data':txt, 'ctype':jsonparser1, 'yrate':jsonparser2})
+
     #return render_to_response('index.html',locals())
 
 def bankpack(request):
